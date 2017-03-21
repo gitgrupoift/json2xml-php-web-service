@@ -21,18 +21,18 @@
   // http://localhost:8090/json2xml/?=https://data.nasa.gov/resource/y77d-th95.json
   ////////////////////////////////
   $json = file_get_contents($_GET['link'], false, stream_context_create($arrContextOptions));
-	$data = json_decode($json, true);
+  $data = json_decode($json, true);
 
   ////////////////////////////////
   //  For debugging purposes. Show the content of $json and $data variables:
   //  echo $json;
   //  echo $data;
   ////////////////////////////////
-	// adding Content Type
-	header("Content-type: text/xml");
+  // adding Content Type
+  header("Content-type: text/xml");
 
-	$xml = Array2XML::createXML('root-element', $data);
+  $xml = Array2XML::createXML('root-element', $data);
 
-	echo $xml->saveXML();
+  echo $xml->saveXML();
 
  ?>
