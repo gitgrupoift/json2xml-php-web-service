@@ -1,17 +1,17 @@
 <?php
 
   /////////////////////////////////
-	// Require Array2XML class
-	require_once('array2xml.php');
+  // Require Array2XML class
+  require_once('array2xml.php');
 
   /////////////////////////////////
   // This is to avoid errors for the local tests and the SSL connections.
-	$arrContextOptions=array(
-		"ssl"=>array(
-        "verify_peer"=>false,
-        "verify_peer_name"=>false,
-		),
-	);
+  $arrContextOptions=array(
+  "ssl"=>array(
+      "verify_peer"=>false,
+      "verify_peer_name"=>false,
+      ),
+  );
 
   ////////////////////////////////
   // The link with the URL comes on a GET call.
