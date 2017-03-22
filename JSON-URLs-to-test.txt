@@ -6,6 +6,10 @@ Data sets in Data Hub (JSON format):
 https://datahub.io/dataset?res_format=json
 
 
+Jeopardy dataset (questions, answers, ...)
+https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopardy_questions_in_a_json_file/
+
+
 NASA:
 https://data.nasa.gov/resource/y77d-th95.json
 
